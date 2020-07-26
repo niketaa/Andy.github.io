@@ -1,0 +1,156 @@
+*{margin: 0; padding: 0; font-family: 'Lobster', cursive;}
+
+header {
+
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to, left #fff 80%, #c3f5ff 20%);
+    
+}
+
+.navsection{
+    width: 100%;
+    height: 20vh;   
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to, top #fff 80%, #c3f5ff 20%);
+
+}
+.logo{
+    width: 40%;
+    color: #fff;
+    background-image: linear-gradient(#8d98e3 40%, #854fee 60%);
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+
+.logo h1{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    animation: aagephiche 2s linear infinite;
+    
+    animation-direction: alternate;
+}
+
+@keyframes aagephiche{
+    from {padding-left: 30px;}
+    to {padding-right: 30px;}
+
+}
+nav{
+    width: 60%;
+    background-color: azure;
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 900;
+    font-size: 17px;
+    position: relative;
+}
+
+nav a:first-child{
+    color: blue;
+
+}
+nav a:before{
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-bottom: 2px solid #4458dc;
+    transition: all 0.4s linear;
+
+}
+nav a:hover:before{
+    width: 100%;
+}
+
+main{
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+.rightside{
+    border-radius: 20% 84% 41% 100% / 17% 99% 4% 81% ;
+    background-color: #e8fbff;
+    
+
+}
+.rightside img{
+    max-width: 300px;
+    height: auto;
+}
+
+.leftside h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    position: relative;
+    
+}
+
+.leftside h2{
+    content: "";
+    width: 450px;
+    height: 3px;
+    position: absolute;
+    top: 43%;
+    left: 15%;
+    background-color: #000;
+
+
+}
+.leftside h1{ 
+    text-transform: uppercase;
+    padding: 20px;
+    
+}
+
+
+
+
+
+main{
+    background-color: cornsilk;
+    border: 5px solid black;
+}
+.About{
+    height: 100vh;
+    size: auto;
+
+    margin: 15px;
+    padding: 10px;
+
+    background-color: cornflowerblue ;
+    background-image: url(../image/computer.jpg);
+}
+/* img{
+    height:50%;
+    width: auto;
+    border: 5px solid green;
+    
+} */
+    
+.About h2{
+    text-align: right;
+    margin-top: 50px;
+    margin-right: 100px;
+    padding: 10px;
+    color: green;
+}
+
+.About h2 p{
+    text-align: right;  
+    text-transform: uppercase;
+
+}
